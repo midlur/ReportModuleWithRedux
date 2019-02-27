@@ -13,7 +13,9 @@ class DeleteDetails extends Component {
 
        this.props.deleteData(details.code);
        this.getCode.value = '';
-       this.componentWillMount();
+       setTimeout(()=>{
+        this.componentWillMount();
+       },150)
       }
       componentWillMount(){
       this.props.getData(new Date());

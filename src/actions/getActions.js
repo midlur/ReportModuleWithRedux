@@ -10,15 +10,12 @@ export function getData(date) {
             .then(response => {
                 console.log(response);
                 dispatch({
-              
                     type : GET_DATA,
                     payload : response
                 })
             }
             
-            );
-            
-        
+            );   
         
     }
 }

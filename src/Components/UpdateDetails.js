@@ -16,7 +16,9 @@ class UpdateDetails extends Component {
        this.props.updateData(details.code,details.qty);
        this.getCode.value = '';
        this.getQty.value = '';
-       this.componentWillMount();
+       setTimeout(()=>{
+        this.componentWillMount();
+       },150)
       }
       componentWillMount(){
       this.props.getData(new Date());

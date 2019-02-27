@@ -45,7 +45,8 @@ class Calender extends React.Component {
 }
 
 const mapStateToProps = state => ({
-    data : state.values.data
+    data : state.values.data,
+    datasize : state.values.datasize
 });
 
 export default connect(mapStateToProps , { getData})(Calender);

@@ -3,7 +3,8 @@ import { GET_DATA, POST_DATA , UPDATE_DATA , DELETE_DATA} from '../actions/types
 const initialState = {
     data : [],
     code: '',
-    qty: ''
+    qty: '',
+    datasize: 0
 }
 
 export default function(state = initialState, action) {

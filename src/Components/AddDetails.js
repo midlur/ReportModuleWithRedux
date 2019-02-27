@@ -16,7 +16,10 @@ class AddDetails extends Component {
        this.props.postData(details.code,details.qty);
        this.getCode.value = '';
        this.getQty.value = '';
-       this.componentWillMount();
+       setTimeout(()=>{
+        this.componentWillMount();
+       },150)
+       
       }
       componentWillMount(){
           console.log("in mount")
